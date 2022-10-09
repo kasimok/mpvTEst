@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F23A872828E44272001E4564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A872728E44272001E4564 /* AppDelegate.swift */; };
-		F23A872A28E44272001E4564 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A872928E44272001E4564 /* ViewController.swift */; };
 		F23A872C28E44274001E4564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23A872B28E44274001E4564 /* Assets.xcassets */; };
 		F23A872F28E44274001E4564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23A872D28E44274001E4564 /* Main.storyboard */; };
+		F28D48A828F2B72B0053331C /* GLVideoLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28D48A728F2B72B0053331C /* GLVideoLayer.swift */; };
+		F28D48AC28F2BA500053331C /* VideoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28D48AB28F2BA500053331C /* VideoWindow.swift */; };
+		F28D48AE28F2C8740053331C /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28D48AD28F2C8740053331C /* VideoView.swift */; };
 		F2B0771C28F2605300A86CA7 /* libtasn1.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B076EE28F2605200A86CA7 /* libtasn1.6.dylib */; };
 		F2B0771D28F2605300A86CA7 /* libsamplerate.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B076EF28F2605200A86CA7 /* libsamplerate.0.dylib */; };
 		F2B0771E28F2605300A86CA7 /* libuchardet.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B076F028F2605200A86CA7 /* libuchardet.0.dylib */; };
@@ -197,11 +199,13 @@
 /* Begin PBXFileReference section */
 		F23A872428E44272001E4564 /* mpvTEst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mpvTEst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23A872728E44272001E4564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F23A872928E44272001E4564 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F23A872B28E44274001E4564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F23A872E28E44274001E4564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F23A873028E44274001E4564 /* mpvTEst.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mpvTEst.entitlements; sourceTree = "<group>"; };
 		F240B1FC28E4437000E064B9 /* mpvTEst-BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mpvTEst-BridgingHeader.h"; sourceTree = "<group>"; };
+		F28D48A728F2B72B0053331C /* GLVideoLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLVideoLayer.swift; sourceTree = "<group>"; };
+		F28D48AB28F2BA500053331C /* VideoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoWindow.swift; sourceTree = "<group>"; };
+		F28D48AD28F2C8740053331C /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		F2B076EE28F2605200A86CA7 /* libtasn1.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtasn1.6.dylib; sourceTree = "<group>"; };
 		F2B076EF28F2605200A86CA7 /* libsamplerate.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsamplerate.0.dylib; sourceTree = "<group>"; };
 		F2B076F028F2605200A86CA7 /* libuchardet.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libuchardet.0.dylib; sourceTree = "<group>"; };
@@ -394,11 +398,13 @@
 			children = (
 				F240B1FC28E4437000E064B9 /* mpvTEst-BridgingHeader.h */,
 				F23A872728E44272001E4564 /* AppDelegate.swift */,
-				F23A872928E44272001E4564 /* ViewController.swift */,
 				F23A872B28E44274001E4564 /* Assets.xcassets */,
 				F23A872D28E44274001E4564 /* Main.storyboard */,
 				F23A873028E44274001E4564 /* mpvTEst.entitlements */,
 				F240B1C628E4431400E064B9 /* Libs */,
+				F28D48A728F2B72B0053331C /* GLVideoLayer.swift */,
+				F28D48AB28F2BA500053331C /* VideoWindow.swift */,
+				F28D48AD28F2C8740053331C /* VideoView.swift */,
 			);
 			path = mpvTEst;
 			sourceTree = "<group>";
@@ -571,8 +577,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23A872A28E44272001E4564 /* ViewController.swift in Sources */,
+				F28D48AE28F2C8740053331C /* VideoView.swift in Sources */,
+				F28D48A828F2B72B0053331C /* GLVideoLayer.swift in Sources */,
 				F23A872828E44272001E4564 /* AppDelegate.swift in Sources */,
+				F28D48AC28F2BA500053331C /* VideoWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
