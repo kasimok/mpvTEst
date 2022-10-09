@@ -30,7 +30,6 @@
 		F2B0772C28F2605300A86CA7 /* libxcb-shape.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B076FE28F2605200A86CA7 /* libxcb-shape.0.dylib */; };
 		F2B0772D28F2605300A86CA7 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B076FF28F2605200A86CA7 /* libfreetype.6.dylib */; };
 		F2B0772E28F2605300A86CA7 /* liblcms2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B0770028F2605200A86CA7 /* liblcms2.2.dylib */; };
-		F2B0772F28F2605300A86CA7 /* libmpv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B0770128F2605200A86CA7 /* libmpv.2.dylib */; };
 		F2B0773028F2605300A86CA7 /* libhogweed.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B0770228F2605200A86CA7 /* libhogweed.6.dylib */; };
 		F2B0773128F2605300A86CA7 /* libunistring.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B0770328F2605200A86CA7 /* libunistring.2.dylib */; };
 		F2B0773228F2605300A86CA7 /* libfribidi.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B0770428F2605200A86CA7 /* libfribidi.0.dylib */; };
@@ -78,7 +77,6 @@
 		F2B0775C28F2606200A86CA7 /* liblcms2.2.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F2B0770028F2605200A86CA7 /* liblcms2.2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F2B0775D28F2606200A86CA7 /* libluajit-5.1.2.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F2B076F228F2605200A86CA7 /* libluajit-5.1.2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F2B0775E28F2606200A86CA7 /* liblzma.5.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F2B076FC28F2605200A86CA7 /* liblzma.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		F2B0775F28F2606200A86CA7 /* libmpv.2.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F2B0770128F2605200A86CA7 /* libmpv.2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F2B0776028F2606200A86CA7 /* libmujs.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F2B0770D28F2605300A86CA7 /* libmujs.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F2B0776128F2606200A86CA7 /* libnettle.8.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F2B0770928F2605300A86CA7 /* libnettle.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F2B0776228F2606200A86CA7 /* libp11-kit.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F2B0770E28F2605300A86CA7 /* libp11-kit.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -132,6 +130,8 @@
 		F2B077AD28F26C3200A86CA7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B077AC28F26C3200A86CA7 /* QuartzCore.framework */; };
 		F2B077AF28F26C3C00A86CA7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B077AE28F26C3C00A86CA7 /* Security.framework */; };
 		F2B077B128F26C4F00A86CA7 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B077B028F26C4F00A86CA7 /* VideoToolbox.framework */; };
+		F2B077BA28F26F8200A86CA7 /* libmpv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B077B928F26F8200A86CA7 /* libmpv.dylib */; };
+		F2B077BB28F26FA000A86CA7 /* libmpv.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F2B077B928F26F8200A86CA7 /* libmpv.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F2F68ECD28E53086000F870D /* include in Resources */ = {isa = PBXBuildFile; fileRef = F2F68ECC28E53086000F870D /* include */; };
 /* End PBXBuildFile section */
 
@@ -170,7 +170,6 @@
 				F2B0777528F2606400A86CA7 /* libxcb.1.dylib in Embed Libraries */,
 				F2B0776128F2606200A86CA7 /* libnettle.8.dylib in Embed Libraries */,
 				F2B0776928F2606300A86CA7 /* libswresample.4.dylib in Embed Libraries */,
-				F2B0775F28F2606200A86CA7 /* libmpv.2.dylib in Embed Libraries */,
 				F2B0777128F2606400A86CA7 /* libXau.6.dylib in Embed Libraries */,
 				F2B0775128F2606100A86CA7 /* libfreetype.6.dylib in Embed Libraries */,
 				F2B0775428F2606100A86CA7 /* libgmp.10.dylib in Embed Libraries */,
@@ -187,6 +186,7 @@
 				F2B0775028F2606100A86CA7 /* libfontconfig.1.dylib in Embed Libraries */,
 				F2B0774C28F2606100A86CA7 /* libavfilter.8.dylib in Embed Libraries */,
 				F2B0776F28F2606300A86CA7 /* libvapoursynth.dylib in Embed Libraries */,
+				F2B077BB28F26FA000A86CA7 /* libmpv.dylib in Embed Libraries */,
 				F2B0774E28F2606100A86CA7 /* libavutil.57.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
@@ -221,7 +221,6 @@
 		F2B076FE28F2605200A86CA7 /* libxcb-shape.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libxcb-shape.0.dylib"; sourceTree = "<group>"; };
 		F2B076FF28F2605200A86CA7 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfreetype.6.dylib; sourceTree = "<group>"; };
 		F2B0770028F2605200A86CA7 /* liblcms2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liblcms2.2.dylib; sourceTree = "<group>"; };
-		F2B0770128F2605200A86CA7 /* libmpv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpv.2.dylib; sourceTree = "<group>"; };
 		F2B0770228F2605200A86CA7 /* libhogweed.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libhogweed.6.dylib; sourceTree = "<group>"; };
 		F2B0770328F2605200A86CA7 /* libunistring.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libunistring.2.dylib; sourceTree = "<group>"; };
 		F2B0770428F2605200A86CA7 /* libfribidi.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfribidi.0.dylib; sourceTree = "<group>"; };
@@ -283,6 +282,7 @@
 		F2B077B628F26C8700A86CA7 /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
 		F2B077B728F26C9200A86CA7 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		F2B077B828F26C9E00A86CA7 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		F2B077B928F26F8200A86CA7 /* libmpv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpv.dylib; sourceTree = "<group>"; };
 		F2F68ECC28E53086000F870D /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -307,7 +307,6 @@
 				F2B0772428F2605300A86CA7 /* libvapoursynth.dylib in Frameworks */,
 				F2B0773528F2605300A86CA7 /* libglib-2.0.0.dylib in Frameworks */,
 				F2B0779928F261C900A86CA7 /* CoreVideo.framework in Frameworks */,
-				F2B0772F28F2605300A86CA7 /* libmpv.2.dylib in Frameworks */,
 				F2B0778828F2613700A86CA7 /* Cocoa.framework in Frameworks */,
 				F2B0774728F2605300A86CA7 /* libzimg.2.dylib in Frameworks */,
 				F2B0774028F2605300A86CA7 /* libavutil.57.dylib in Frameworks */,
@@ -343,6 +342,7 @@
 				F2B0774428F2605300A86CA7 /* libswscale.6.dylib in Frameworks */,
 				F2B0772D28F2605300A86CA7 /* libfreetype.6.dylib in Frameworks */,
 				F2B077A328F2624700A86CA7 /* IOKit.framework in Frameworks */,
+				F2B077BA28F26F8200A86CA7 /* libmpv.dylib in Frameworks */,
 				F2B0772628F2605300A86CA7 /* libidn2.0.dylib in Frameworks */,
 				F2B0771C28F2605300A86CA7 /* libtasn1.6.dylib in Frameworks */,
 				F2B0773628F2605300A86CA7 /* libavcodec.59.dylib in Frameworks */,
@@ -406,6 +406,7 @@
 		F240B1C628E4431400E064B9 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				F2B077B928F26F8200A86CA7 /* libmpv.dylib */,
 				F2B0770828F2605300A86CA7 /* libavcodec.59.dylib */,
 				F2B0771828F2605300A86CA7 /* libavdevice.59.dylib */,
 				F2B0771A28F2605300A86CA7 /* libavfilter.8.dylib */,
@@ -427,7 +428,6 @@
 				F2B0770028F2605200A86CA7 /* liblcms2.2.dylib */,
 				F2B076F228F2605200A86CA7 /* libluajit-5.1.2.dylib */,
 				F2B076FC28F2605200A86CA7 /* liblzma.5.dylib */,
-				F2B0770128F2605200A86CA7 /* libmpv.2.dylib */,
 				F2B0770D28F2605300A86CA7 /* libmujs.dylib */,
 				F2B0770928F2605300A86CA7 /* libnettle.8.dylib */,
 				F2B0770E28F2605300A86CA7 /* libp11-kit.0.dylib */,
