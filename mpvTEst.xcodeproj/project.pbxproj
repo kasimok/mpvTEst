@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F23A872828E44272001E4564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23A872728E44272001E4564 /* AppDelegate.swift */; };
 		F23A872C28E44274001E4564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23A872B28E44274001E4564 /* Assets.xcassets */; };
-		F23A872F28E44274001E4564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23A872D28E44274001E4564 /* Main.storyboard */; };
+		F28BF25E28F3F6B300D5FAA4 /* MPVApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BF25D28F3F6B300D5FAA4 /* MPVApplication.swift */; };
 		F28D48A828F2B72B0053331C /* GLVideoLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28D48A728F2B72B0053331C /* GLVideoLayer.swift */; };
 		F28D48AC28F2BA500053331C /* VideoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28D48AB28F2BA500053331C /* VideoWindow.swift */; };
 		F28D48AE28F2C8740053331C /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28D48AD28F2C8740053331C /* VideoView.swift */; };
@@ -200,9 +200,9 @@
 		F23A872428E44272001E4564 /* mpvTEst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mpvTEst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23A872728E44272001E4564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F23A872B28E44274001E4564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F23A872E28E44274001E4564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F23A873028E44274001E4564 /* mpvTEst.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mpvTEst.entitlements; sourceTree = "<group>"; };
 		F240B1FC28E4437000E064B9 /* mpvTEst-BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mpvTEst-BridgingHeader.h"; sourceTree = "<group>"; };
+		F28BF25D28F3F6B300D5FAA4 /* MPVApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVApplication.swift; sourceTree = "<group>"; };
 		F28D48A728F2B72B0053331C /* GLVideoLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLVideoLayer.swift; sourceTree = "<group>"; };
 		F28D48AB28F2BA500053331C /* VideoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoWindow.swift; sourceTree = "<group>"; };
 		F28D48AD28F2C8740053331C /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
@@ -398,8 +398,8 @@
 			children = (
 				F240B1FC28E4437000E064B9 /* mpvTEst-BridgingHeader.h */,
 				F23A872728E44272001E4564 /* AppDelegate.swift */,
+				F28BF25D28F3F6B300D5FAA4 /* MPVApplication.swift */,
 				F23A872B28E44274001E4564 /* Assets.xcassets */,
-				F23A872D28E44274001E4564 /* Main.storyboard */,
 				F23A873028E44274001E4564 /* mpvTEst.entitlements */,
 				F240B1C628E4431400E064B9 /* Libs */,
 				F28D48A728F2B72B0053331C /* GLVideoLayer.swift */,
@@ -566,7 +566,6 @@
 			files = (
 				F2F68ECD28E53086000F870D /* include in Resources */,
 				F23A872C28E44274001E4564 /* Assets.xcassets in Resources */,
-				F23A872F28E44274001E4564 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,21 +580,11 @@
 				F28D48A828F2B72B0053331C /* GLVideoLayer.swift in Sources */,
 				F23A872828E44272001E4564 /* AppDelegate.swift in Sources */,
 				F28D48AC28F2BA500053331C /* VideoWindow.swift in Sources */,
+				F28BF25E28F3F6B300D5FAA4 /* MPVApplication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F23A872D28E44274001E4564 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F23A872E28E44274001E4564 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F23A873128E44274001E4564 /* Debug */ = {
@@ -724,8 +713,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/mpvTEst/Libs/include";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSPrincipalClass = mpvTEst.MPVApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -756,8 +744,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/mpvTEst/Libs/include";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSPrincipalClass = mpvTEst.MPVApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
